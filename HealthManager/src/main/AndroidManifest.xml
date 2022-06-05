@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.roll.healthmanager">
+
+    <application>
+        <activity android:name="com.roll.healthmanager.ui.test.HealthManagerConfigActivity"></activity>
+        <activity android:name="com.roll.healthmanager.ui.test.HealthManagerLogActivity" />
+        <activity
+            android:name="com.roll.healthmanager.ui.HealthManagerDialogActivity"
+            android:label=""
+            android:theme="@style/MyTranslucentTheme" />
+        <activity
+            android:name="com.roll.healthmanager.ui.HealthManagerCoverActivity"
+            android:label=""
+            android:theme="@style/MyTranslucentTheme" />
+    </application>
+
+</manifest>

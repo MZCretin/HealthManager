@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#BF0A002A"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_cover"
+        android:layout_width="255dp"
+        android:layout_height="277dp"
+        android:layout_marginLeft="60dp"
+        app:layout_constraintDimensionRatio="510:554"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="60dp"
+        android:src="@mipmap/img_health_manager_cover"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/btn_i_know"
+        android:layout_marginTop="85dp"
+        app:layout_constraintTop_toBottomOf="@+id/iv_cover"
+        android:layout_width="123dp"
+        android:layout_height="45dp"
+        android:background="@drawable/bg_round_878297_24"
+        android:text="我知道了"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

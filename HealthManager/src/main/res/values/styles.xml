@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<!--    <style name="MyTranslucentTheme" parent="Theme.AppCompat.Light">-->
+<!--&lt;!&ndash;        <item name="android:windowNoTitle">true</item>&ndash;&gt;-->
+<!--&lt;!&ndash;        <item name="android:windowBackground">#BF0A002A</item>&ndash;&gt;-->
+<!--&lt;!&ndash;        <item name="android:windowIsTranslucent">true</item>&ndash;&gt;-->
+<!--&lt;!&ndash;        <item name="android:windowFrame">@null</item>&ndash;&gt;-->
+<!--&lt;!&ndash;        <item name="android:backgroundDimEnabled">true</item>&ndash;&gt;-->
+<!--&lt;!&ndash;        <item name="android:windowFullscreen">true</item>&ndash;&gt;-->
+<!--&lt;!&ndash;        <item name="android:windowContentOverlay">@null</item>&ndash;&gt;-->
+<!--&lt;!&ndash;        <item name="android:windowAnimationStyle">@null</item>&ndash;&gt;-->
+<!--    </style>-->
+
+    <style name="MyTranslucentTheme" parent="Theme.AppCompat.NoActionBar">
+        <!--不设置activity进入和退出动画样式-->
+        <item name="android:windowAnimationStyle">@null</item>
+        <!--设置窗口的背景为透明，设置透明背景必须要设置此项-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--设置窗口的背景是否为半透明，设置透明背景必须要设置此项-->
+        <item name="android:windowIsTranslucent">true</item>
+        <!--设置状态栏的背景为半透明-->
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <style name="ActivityDialog" parent="Theme.AppCompat.Light.Dialog">
+<!--        <item name="android:windowBackground">@android:color/transparent</item>-->
+        <!--        <item name="android:windowFrame">@null</item>-->
+        <!--        <item name="android:backgroundDimEnabled">true</item>-->
+        <!--        <item name="android:windowIsTranslucent">true</item>-->
+        <!--        <item name="android:windowNoTitle">true</item>-->
+        <!--        <item name="android:windowFullscreen">true</item>-->
+        <!--        <item name="android:windowContentOverlay">@null</item>-->
+        <!--        <item name="android:windowAnimationStyle">@null</item>-->
+    </style>
+</resources>
