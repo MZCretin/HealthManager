@@ -15,7 +15,7 @@ App健康管理组件 Android 健康提醒组件
 
 + 深夜提醒页面
 
-  <img src="./doc/images/img2.png" alt="img2" style="zoom:50%;" />
+<img src="./doc/images/img2.png" alt="img2" style="zoom:50%;" />
 
 ## 引入组件
 
