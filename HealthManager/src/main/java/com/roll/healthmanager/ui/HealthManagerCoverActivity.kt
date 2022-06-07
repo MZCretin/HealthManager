@@ -6,6 +6,7 @@ import android.content.Intent
 import android.content.Intent.*
 import android.os.Build
 import android.os.Bundle
+import android.view.View
 import android.view.ViewGroup
 import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
@@ -45,20 +46,22 @@ class HealthManagerCoverActivity : AppCompatActivity() {
             window.addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
         }
 
-//        //设置点击事件
-//        findViewById<TextView>(R.id.btn_i_know).setOnClickListener {
-//            finishPage()
-//        }
-        val contentParent: ViewGroup = findViewById<ViewGroup>(android.R.id.content)
-        contentParent.setOnClickListener {
-            if(!isClick){
-                isClick = true
-                finishPage()
-            }
+//      设置点击事件
+        findViewById<View>(R.id.id_health_ok)?.setOnClickListener {
+            finishPage()
+        }
+        findViewById<View>(R.id.id_health_ok_v2)?.setOnClickListener {
+            finishPage()
+        }
+        findViewById<View>(R.id.id_health_ok_v3)?.setOnClickListener {
+            finishPage()
+        }
+        findViewById<View>(R.id.id_health_ok_v4)?.setOnClickListener {
+            finishPage()
         }
     }
 
-    fun finishPage(){
+    fun finishPage() {
         //如果这个页面destroyed之后需要重新计时
         HealthManagerHelper.resetTask()
         HealthManagerHelper.startDelayTask()

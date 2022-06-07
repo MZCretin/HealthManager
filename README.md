@@ -69,9 +69,9 @@ Initialization on the BaseApplication is recommended.
             .setStudyTimeLimit(appUseLimit)
             //设置欢迎页面，因为在这个页面不能显示健康管理弹窗 没有欢迎页面就不设置
             .setAppSplashActivity(SplashActivity::class.java)
-            //设置周期性弹窗的ui
+            //设置周期性弹窗的ui 有一点需要注意，在你自定义的布局文件中，点击关闭的页面或者按钮的id需要是 id_health_ok，id_health_ok_v2, id_health_ok_v3, id_health_ok_4中的一个或几个
             .setLayoutCover(R.layout.activity_health_manager_cover)
-            //设置夜深了弹簧ui
+            //设置夜深了弹簧ui  有一点需要注意，在你自定义的布局文件中，点击关闭的页面或者按钮的id需要是 id_health_ok，id_health_ok_v2, id_health_ok_v3, id_health_ok_4中的一个或几个
             .setLayoutDialog(R.layout.activity_health_manager_dialog)
             //设置夜深模式信息 即设置夜深模式开始的时间和结束时间 dailyNightModeOverDay指的是你设置的时间是否是跨越当日的
             //比如你设置深夜时间指的是当天晚上21：00到次日06：00 那就是 startHour = 21 startMinute = 0 startSecond = 0 endHour = 6  endMinute = 0 endSecond = 0 dailyNightModeOverDay = true

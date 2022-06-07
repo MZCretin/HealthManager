@@ -42,12 +42,24 @@ class HealthManagerDialogActivity : AppCompatActivity() {
             window.addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
         }
 
-        findViewById<View>(R.id.tv_tips_ok).setOnClickListener {
+        findViewById<View>(R.id.id_health_ok)?.setOnClickListener {
+            pageFinish()
+        }
+
+        findViewById<View>(R.id.id_health_ok_v2)?.setOnClickListener {
+            pageFinish()
+        }
+
+        findViewById<View>(R.id.id_health_ok_v3)?.setOnClickListener {
+            pageFinish()
+        }
+
+        findViewById<View>(R.id.id_health_ok_v4)?.setOnClickListener {
             pageFinish()
         }
     }
 
-    fun pageFinish(){
+    fun pageFinish() {
         //如果这个页面destroyed之后需要重新计时
         HealthManagerHelper.startDelayTask()
         TaskHelper.finishTask()
